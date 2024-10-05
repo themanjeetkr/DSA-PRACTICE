@@ -4,6 +4,7 @@ using namespace std;
 int a__(int a){
     int nth=3*a+7;
     return nth;
+    // for an nth term
 
 }
 

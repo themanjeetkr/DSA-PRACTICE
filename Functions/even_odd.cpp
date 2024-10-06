@@ -10,7 +10,7 @@ int even_odd( int c){
     else{
         cout<<"it is an odd number"<<endl;
     }
-    
+    // else part
 
 }
 

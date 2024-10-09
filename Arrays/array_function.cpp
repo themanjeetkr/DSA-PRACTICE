@@ -14,11 +14,11 @@ void printarray(int arr[16],int size){
 }
 
 int main(){
-int fift[16]={1};
+int arr[16]={1};
 int n=10;
 
 
-printarray(fift, 16);
+printarray(arr, 16);
 
 
 }

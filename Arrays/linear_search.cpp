@@ -21,7 +21,10 @@ int main(){
      int key;
      cin>>key;
      int found=search(arr,10,key);
+
+    //  1 for true and 0 for false
      if (found)
+
      {
        cout<<"key is present"<<endl;
      }

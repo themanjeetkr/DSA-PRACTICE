@@ -28,6 +28,7 @@ int main(){
      {
        cout<<"key is present"<<endl;
      }
+    //  this is else part
      else{
         cout<<"key is not found"<<endl;
      }

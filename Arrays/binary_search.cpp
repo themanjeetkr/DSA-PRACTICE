@@ -21,6 +21,7 @@ int binary_search(int arr[], int size,int key){
        else{
         end=mid-1;
        }
+    //    update mid value 
        
        mid=start+(end-start)/2;
        

@@ -52,7 +52,7 @@ int lastocc(int arr[],int n, int key){
         else{
             start=mid+1;
         }
-        mid=start+(end-start)/2;
+        mid=start+(end-start)/2;    
         
         
     }
@@ -65,7 +65,7 @@ int even[5]={1,4,5,5,5};
 int first=firstocc(even,5,5);
 int last=lastocc(even,5,5);
 cout<<"the first occurence is at index :"<<first<<endl;
-cout<<"the last occurence of 5 is index :"<<last;
+cout<<"the last occurence of 5 is index :   "<<last;
 
 
 

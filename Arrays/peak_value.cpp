@@ -11,11 +11,12 @@ int peak_value(int arr[], int n) {
         if (arr[mid] < arr[mid + 1]) {
             s = mid + 1; // Move to the right half
         } else {
-            e = mid; // Move to the left half
+            e = mid; // Move to the left half   
         }
     }
 
     return arr[s]; // Return the peak value
+
 }
 
 int main() {

@@ -12,18 +12,18 @@ void selectionsort(int arr[],int n){
   for (int i = 0; i < n-1; i++)
   {
 
-    int min=i;        //for initial index
+    int minindex=i;        //for initial index
     for (int j = i+1; j < n; j++)
     {
-      if (arr[i]>arr[j])
+      if (arr[i]>arr[j])//compare the value
       {
         
-        min=j;      //update the initial value 
+        minindex=j;      //update the initial value 
       }
      
       
     }
-     swap(arr[min],arr[i]);          //swap the value
+     swap(arr[minindex],arr[i]);          //swap the value
     
   }
   for (int i = 0; i < n; i++)

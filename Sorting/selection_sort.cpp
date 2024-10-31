@@ -28,7 +28,7 @@ void selectionsort(int arr[],int n){
   }
   for (int i = 0; i < n; i++)
   {
-    cout<<arr[i]<<",";                 //print one by one value 
+    cout<<arr[i]<<",";  //only one               //print one by one value 
   }
   
   

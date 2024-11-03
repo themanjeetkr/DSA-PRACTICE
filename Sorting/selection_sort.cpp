@@ -6,7 +6,7 @@ void selectionsort(int arr[],int n){
   {
 
     int minindex=i;        //for initial index
-    for (int j = i+1; j < n; j++)
+    for (int j = i+1; j < n; j++)//lopp for compare other value
     {
       if (arr[i]>arr[j])//compare the value
       {
@@ -21,7 +21,7 @@ void selectionsort(int arr[],int n){
   }
   for (int i = 0; i < n; i++)
   {
-    cout<<arr[i]<<",";  //only one               //print one by one value 
+    cout<<arr[i]<<",";  //only one            //print one by one value 
   }
   
   

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void insertion_sort(int arr[], int n) {
+void insertion_sort(int arr[], int n) {    //function of insertion sort
     for (int i = 1; i < n; i++) { // Start from the second element
         int key = arr[i]; // Element to be inserted
         int j = i - 1;

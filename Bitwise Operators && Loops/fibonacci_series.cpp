@@ -7,10 +7,10 @@ int main(){
     int a=0;
     int b=1;
     cout<<a<<b;
-    for (int i = 0; i<=n; i++)
+    for (int i = 0; i<=n; i++)//for loop 
     {
-        int next_number=a+b;
-        cout<<next_number<<" ";
+        int next_number=a+b;//next number 
+        cout<<next_number<<"   ";
         a=b;
         b=next_number;
 

@@ -7,9 +7,9 @@ int main(){
     int a=0;
     int b=1;
     cout<<a<<b;
-    for (int i = 0; i<=n; i++)//for loop 
+    for (int i = 0; i<=n; i++)//for loop  FOR N NUMBER OF ITERATION 
     {
-        int next_number=a+b;//next number 
+        int next_number=a+b;//next number SUM OF A+B
         cout<<next_number<<"   ";
         a=b;
         b=next_number;

@@ -7,7 +7,7 @@ int main()
     cin >> n;
     int i = 1;
     int sum = 0;
-    while (i < n)
+    while (i < n)  //looping for sum of n number
 
     {
         sum += i;

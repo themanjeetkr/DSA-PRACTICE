@@ -13,5 +13,5 @@ int main()
         sum += i;
         i++;
     }
-    cout << "the value of sum is " << sum;
+    cout << "the value of sum is " << sum;//printinf the sum 
 }

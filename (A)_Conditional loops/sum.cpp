@@ -10,8 +10,8 @@ int main()
     while (i < n)  //looping for sum of n number
 
     {
-        sum += i;
+        sum += i;//sum all the the value from 1 to n
         i++;
     }
-    cout << "the value of sum is " << sum;//printinf the sum 
+    cout << "the value of sum is " << sum;//print the sum 
 }

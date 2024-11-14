@@ -11,6 +11,7 @@ int  main(){
     {
         cin>>arr[i];
     }
+    cout<<"the value are"<<endl;
     for (int i = 0; i < size; i++)
     {
         cout<<arr[i]<<endl;

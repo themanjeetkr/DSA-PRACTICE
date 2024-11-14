@@ -23,7 +23,7 @@ int main(){
      int found=search(arr,10,key);
 
     //  1 for true and 0 for false
-     if (found)
+     if (found==1)
 
      {
        cout<<"key is present"<<endl;

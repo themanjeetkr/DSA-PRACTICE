@@ -10,4 +10,6 @@ int  main (){
     cout<<"size before pop "<<q.size()<<endl;
     cout<<" first element "<<q.front()<<endl;
     q.pop();
+    cout<<"first elemet "<<q.front()<<endl;
+    cout<<"size after pop"<<q.size()<<endl;
 }

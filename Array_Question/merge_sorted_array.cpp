@@ -5,7 +5,7 @@
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i < n && j < m)
+        while (i < n && j < m)    //loop for check the condion 
         {
             if (arr1[i] < arr2[j])
             {

@@ -11,7 +11,7 @@ bool sorted(int arr[],int n){
             
             
         }
-        if (arr[n-1]>arr[0])
+        if (arr[n-1]<arr[0])
         {
            count++;
         }

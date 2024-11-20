@@ -11,11 +11,11 @@ bool sorted(int arr[],int n){
             
             
         }
-        if (arr[n-1]<arr[0])
+        if (arr[n-1]<arr[0])   // for last value 
         {
            count++;
         }
-        return count<=1;
+        return count<=1;//check true of false 
         
         
 

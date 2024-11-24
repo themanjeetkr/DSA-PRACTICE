@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 
-bool check_palindrome(char name[],int n){
+bool check_palindrome(char name[],int n){ //return boolean 
     int s=0;
     int e=n-1;
    while (s<=e)
    {
-   if (name[s]!=name[e])
+   if (name[s]!=name[e]) //Check first charactor and last charactor are the same 
    {
     return 0;
    }
@@ -53,7 +53,7 @@ int main(){
     reverse(name,len);
     cout<<"your name is "<<name<<endl;
 
-     bool is_palindrome=check_palindrome(name,len);
+     bool is_palindrome=check_palindrome(name,len); 
      if (is_palindrome)
      {
        cout<<"your name is palindrome"<<endl;

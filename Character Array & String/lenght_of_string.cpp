@@ -4,7 +4,7 @@ int getlength(char name[]){
     int count=0;
     for (int i = 0; i < name[i]!=0; i++)
     {
-        count++;
+    count++;   // increase the no of element one by one 
     }
     return count;
     

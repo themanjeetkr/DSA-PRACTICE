@@ -18,7 +18,7 @@ bool check_palindrome(char name[],int n){ //return boolean
    
    
    }
-   return 1;
+   return 1;//return if not found 
    
     
 }

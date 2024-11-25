@@ -16,7 +16,7 @@ int getlength(char name[]){
     int count=0;
     for (int i = 0; i < name[i]!=0; i++)
     {
-        count++;
+        count++;    //count every number of alphabet
     }
     return count;
     

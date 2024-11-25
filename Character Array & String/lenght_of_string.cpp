@@ -13,6 +13,6 @@ int getlength(char name[]){
 int main(){
     char name[20];
     cin>>name;
-    cout<<"the length of  character array is"<<getlength(name);
+    cout<<"the length of  character array is"<<getlength(name);//call the function 
 
 }

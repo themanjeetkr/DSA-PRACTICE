@@ -20,13 +20,13 @@
                 j++;
             }
         }
-        while (i < n)       
+        while (i < n)       // to add remaining elements in array3 of array1
         {
             arr3[k] = arr1[i];
             i++;
             k++;
         }
-        while (j < m)
+        while (j < m)   // add remaining elements in array3 of array2
         {
             arr3[k] = arr2[j];
             j++;

@@ -3,7 +3,7 @@ using namespace std;
 void insertion_sort(int arr[],int n){
     for (int i = 1; i < n; i++)
     {
-        int temp=arr[i];
+        int temp=arr[i]; // for compare index 1 from index 0
         int j= i-1;
         for (; j>=0; j--)
         {
@@ -17,7 +17,8 @@ void insertion_sort(int arr[],int n){
           
           
         }
-        arr[j+1]=temp;
+        arr[j+1]=temp; // set the value to a original place 
+        
 
 
         

@@ -31,6 +31,6 @@ return sum;
     // update(p);
     // cout<<"after "<<*p<<endl;  //The change is applied to the original value because p points to its address.
     int arr[5]={1,2,4,5,6};
-    cout<<"sum is "<<getsum(arr,5);
+    cout<<"sum is "<<getsum(arr,5);         //arr+3 means increase index 0+3 
     
  }

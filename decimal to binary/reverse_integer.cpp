@@ -9,7 +9,7 @@ int main(){
     {
         int digit=n%10;
         // to reverse the number
-        ans=(ans*10)+digit;
+        ans=(ans*10)+digit; //to store the ans variable 
         n=n/10;
     }
     cout<<"the reverse number is:"<<ans;

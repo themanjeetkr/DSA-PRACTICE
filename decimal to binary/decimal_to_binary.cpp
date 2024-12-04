@@ -16,6 +16,6 @@ int main(){
         n= n>>1;
         i++;
     }
-    cout<<"the value of binary to decimal is :"<<answer;
+    cout<<"the value of binary to decimal is :"<<answer;// print the answer
     
 }

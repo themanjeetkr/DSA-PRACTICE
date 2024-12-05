@@ -5,7 +5,7 @@ int main(){
     int n;
     cin>>n;
     int i=1;
-    while (i<=n)
+    while (i<=n) //for number of rows
     {
         int j=1;
         while (j<=n)

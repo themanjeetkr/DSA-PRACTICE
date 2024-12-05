@@ -8,7 +8,7 @@ int main(){
     while (i<=n) //for number of rows
     {
         int j=1;
-        while (j<=n)
+        while (j<=n)// for number of columns 
         {
            cout<<"*";
            j+=1;

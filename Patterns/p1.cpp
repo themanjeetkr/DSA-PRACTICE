@@ -11,7 +11,7 @@ int main(){
         while (j<=n)// for number of columns 
         {
            cout<<"*";
-           j+=1;        //for increment
+           j+=1;        //for increment 
         }
         cout<<"\n";
        i=i+1;

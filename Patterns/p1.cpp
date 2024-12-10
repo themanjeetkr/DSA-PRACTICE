@@ -7,7 +7,7 @@ int main(){
     int i=1;
     while (i<=n) //for number of rows
     {
-        int j=1;
+        int j=1; // for initialize the column no
         while (j<=n)// for number of columns 
         {
            cout<<"*";

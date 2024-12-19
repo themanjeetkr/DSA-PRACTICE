@@ -7,7 +7,7 @@ void bubble_sort(int arr[],int n){
        {
         if (arr[j]>arr[j+1]) //compare index 1 with index 0
         {
-            swap(arr[j],arr[j+1]);
+            swap(arr[j],arr[j+1]);//swap the values
         }
         
        }

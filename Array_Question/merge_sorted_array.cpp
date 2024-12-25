@@ -9,7 +9,7 @@
         {
             if (arr1[i] < arr2[j])
             {
-                arr3[k] = arr1[i];
+                arr3[k] = arr1[i];// add the element into arr3
                 k++;
                 i++;
             }

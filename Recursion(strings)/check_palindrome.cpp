@@ -3,7 +3,8 @@
     bool checkpalindrome(string str ,int i ,int j){
         if(i>j)
         return true;
-        if(str[i]!=str[j]){
+        if(str[i]!=str[j]){  // check the value 
+        
             return false;
 
         }

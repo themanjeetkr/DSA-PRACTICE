@@ -4,7 +4,8 @@ void reverse(string &str,int i ,int j){
     if(i>j)
      return;
     swap(str[i],str[j]);
-    i++;
+    i++;                     //increment the index of string  
+
     j--;
     return reverse(str,i,j);
 }

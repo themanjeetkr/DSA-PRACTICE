@@ -58,7 +58,7 @@ void mergeSort(int *arr, int s, int e) {
     
     int mid = (s+e)/2;
 
-    //left part sort karna h 
+    //left part sort karna h  hey 
     mergeSort(arr, s, mid);
     
     //right part sort karna h 

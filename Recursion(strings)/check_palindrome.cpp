@@ -5,7 +5,7 @@
         return true;
         if(str[i]!=str[j]){  // check the value 
         
-            return false;
+            return false;//it will return false
 
         }
         else{

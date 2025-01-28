@@ -5,7 +5,7 @@ bool binarysearch(int *arr, int s, int e, int k) {
     if (s > e)
         return false;
     
-    int mid = s + (e - s) / 2;
+    int mid = s + (e - s) / 2;     //mid value of index
     
     if (arr[mid] == k)
         return true;

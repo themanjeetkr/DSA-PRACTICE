@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int i=5;
     int *p=&i;
-    int **p2=&p;
+    int **p2=&p;//pointer to pointer
 
     cout<<"sab sahi chal rhaa hai "<<endl;
     cout<<"printing p"<<p<<endl;

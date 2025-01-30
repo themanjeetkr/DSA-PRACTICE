@@ -4,7 +4,8 @@ using namespace std;
 bool check_palindrome(char name[],int n){ //return boolean 
     int s=0;
     int e=n-1;
-   while (s<=e)
+   while (s<=e)/// check starting and endling value 
+   
    {
    if (name[s]!=name[e]) //Check first charactor and last charactor are the same 
    {

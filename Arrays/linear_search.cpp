@@ -7,7 +7,7 @@ bool search(int arr[],int size,int key){
     if (arr[i]==key)
     {
         return 1;
-    }
+    }                                                   //time complexity O(n) and space complexity O(1)
     
     
   }

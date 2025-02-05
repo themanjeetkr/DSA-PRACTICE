@@ -9,5 +9,5 @@ int main(){
         // arr[2]=*arr+1 or arr[i]=*(arr+i) or i[arr]=*(i+arr)
     cout<<"5th"<<*arr+1<<endl;// hey
     cout<<"6th"<<*(arr+1)<<endl; 
-    cout<<"7th"<<*(arr)+1 <<endl;
+    cout<<"7th"<<*(arr)+1 <<endl;//next number 
 }

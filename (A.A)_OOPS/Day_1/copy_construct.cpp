@@ -9,10 +9,11 @@ private:
 
 public:
     char level;
-    //copy constructor
+    //copy constructor built up
     hero(hero &temp){
-        this->health=temp.health;
-        this->level=temp.level;
+        cout<<"copy construction called"<<endl;
+        this->health=temp.health;  //copy the health value
+        this->level=temp.level;   //copy the level value 
     }
 
     //constructor
@@ -57,5 +58,10 @@ int main(){
    s.print(); 
    hero r(s);
    r.print();
+
+   s=r;
+   s.print();
+   r.print();
+   
 
  }

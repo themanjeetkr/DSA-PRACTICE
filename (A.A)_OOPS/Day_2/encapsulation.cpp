@@ -12,6 +12,7 @@ class student{
    int getrollno(){
     return studentrollno;
    }
+   
    void setstudentname(string studentname){
      this->studentname=studentname;
    }

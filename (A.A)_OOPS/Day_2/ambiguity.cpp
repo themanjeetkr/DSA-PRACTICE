@@ -18,7 +18,7 @@ class C:public A,public B{
 
 int main(){
     C oj1;
-    //inheritence ambiguity
+    //inheritence ambiguity      // for avoiding confusion of compiler 
     oj1.A::fun();
     oj1.B::fun();
     

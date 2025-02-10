@@ -22,7 +22,7 @@ void print(node *&head){
          while (temp!=NULL)
          {
             /* code */
-            cout<<temp->data<<endl;
+            cout<<temp->data<<" ";
             temp=temp->next;    
          }
          
@@ -38,8 +38,12 @@ int main(){
     // head pointed to node 1
     node*head=node1;
     print(head);
+
     insertAthead(head,12);
+
     print(head);
+    // insertAthead(head,15);
+    // print(head);
 
 
 }

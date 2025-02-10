@@ -4,6 +4,8 @@ class node{
     public:
     int data;
     node*next;
+
+    //constructed call
     node(int value){
         this->data=value;
         this->next=NULL;

@@ -23,7 +23,8 @@ void insertAttail(node*& tail, int d) {
 void print(node* head) {
     node* temp = head;
     while (temp != NULL) {
-        cout << temp->data << " -> ";
+        cout << temp->data << " -> ";  //print the data 
+        
         temp = temp->next;
     }
     cout << "NULL" << endl;

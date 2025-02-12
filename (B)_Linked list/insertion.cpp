@@ -22,10 +22,25 @@ void print(node *&head){
          while (temp!=NULL)
          {
             /* code */
-            cout<<temp->data<<" ";
+            cout<<temp->data<<endl;
             temp=temp->next;    
          }
+        }
          
+void insertatposition(node*& head,int position ,int d){
+    node* temp=head;
+    int count=1;
+    while(count<position-1){
+        temp=temp->next;
+        count++;
+
+    };
+    node*nodetoinsert=new node(d);
+    nodetoinsert->next=temp->next;
+    temp->next=nodetoinsert;
+    
+
+
 }
 
 int main(){
@@ -44,6 +59,8 @@ int main(){
     print(head);
     // insertAthead(head,15);
     // print(head);
+    insertatposition(head,2,2);
+    print(head);
 
 
 }

@@ -1,66 +1,86 @@
 #include<iostream>
 using namespace std;
-class node{
-    public:
-    int data;
-    node*next;
-    node(int value){
-        this->data=value;
-        this->next=NULL;
 
+class node {
+public:
+    int data;
+    node* next;
+
+    node(int value) {
+        this->data = value;
+        this->next = NULL;
+    }
+};
+
+// Insert at head
+void insertAthead(node*& head, int d) {
+    node* temp = new node(d);
+    temp->next = head;
+    head = temp;
+}
+
+// Insert at tail
+void insertAttail(node*& tail, int d) {
+    node* temp = new node(d);
+    tail->next = temp;
+    tail = temp; // Update tail reference
+}
+
+// Print the linked list
+void print(node*& head) {
+    node* temp = head;
+    while (temp != NULL) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+// Insert at a specific position
+void insertatposition(node*& tail, node*& head, int position, int d) {
+    if (position == 1) { // Insert at head
+        insertAthead(head, d);
+        return;
     }
 
-};
-void insertAthead(node* &head,int d){
-    node*temp=new node(d);
-    temp->next=head;
-    head=temp;
-    
-}
-void print(node *&head){
-       node*temp=head;
-         while (temp!=NULL)
-         {
-            /* code */
-            cout<<temp->data<<endl;
-            temp=temp->next;    
-         }
-        }
-         
-void insertatposition(node*& head,int position ,int d){
-    node* temp=head;
-    int count=1;
-    while(count<position-1){
-        temp=temp->next;
+    node* temp = head;
+    int count = 1;
+
+    while (count < position - 1 && temp->next != NULL) {
+        temp = temp->next;
         count++;
+    }
 
-    };
-    node*nodetoinsert=new node(d);
-    nodetoinsert->next=temp->next;
-    temp->next=nodetoinsert;
-    
+    // If inserting at the last position, update tail
+    if (temp->next == NULL) {
+        insertAttail(tail, d);
+        return;
+    }
 
-
+    // Insert in the middle
+    node* nodetoinsert = new node(d);
+    nodetoinsert->next = temp->next;
+    temp->next = nodetoinsert;
 }
 
-int main(){
+int main() {
+    // Creating a new node (first node)
+    node* node1 = new node(10);
 
-    // creation of new node
-    node* node1=new node(10);
-    // cout<<node1->data<<endl;
-    // cout<<node1->next<<endl;
-    
-    // head pointed to node 1
-    node*head=node1;
-    print(head);
+    // Head and tail both point to node1 initially
+    node* head = node1;
+    node* tail = node1;
 
-    insertAthead(head,12);
+    print(head); // Output: 10
 
-    print(head);
-    // insertAthead(head,15);
-    // print(head);
-    insertatposition(head,2,2);
-    print(head);
+    insertAthead(head, 12);
+    print(head); // Output: 12 10
 
+    insertAttail(tail, 22);
+    print(head); // Output: 12 10 22
 
+    insertatposition(tail, head, 4, 2);
+    print(head); // Expected Output: 12 10 2 22
+
+    return 0;
 }

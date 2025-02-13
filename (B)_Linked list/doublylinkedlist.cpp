@@ -53,6 +53,34 @@ void print(node*head){
 
 
     }
+    //insert at any position 
+    void insertatposition(node*head, node*&tail,int position,int d){
+      if(position==1)
+      {
+        insertAthead(head,d);
+      }
+    node* temp=head;
+    int cnt=0;
+    while (cnt<position-1)
+    {
+        /* code */
+        temp=temp->next;
+        cnt++;
+    }
+    if (temp->next=NULL)
+    {
+        /* code */
+        insertattail(tail,d);
+        return;
+    }
+    node*nodetoinsert=new node(d);
+    nodetoinsert->next=temp->next;
+    temp->next->prev=nodetoinsert;
+    temp->next=nodetoinsert;
+    nodetoinsert->prev=temp;
+    
+    
+    }
 
 
 int main(){
@@ -71,4 +99,5 @@ int main(){
     print(head);
     insertattail(tail,25);
     print(head);
+    insertatposition(head,tail,23,2);
 }

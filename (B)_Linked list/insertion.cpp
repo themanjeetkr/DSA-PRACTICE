@@ -42,6 +42,7 @@ void insertatposition(node*& tail, node*& head, int position, int d) {
         insertAthead(head, d);
         return;
     }
+    
 
     node* temp = head;
     int count = 1;

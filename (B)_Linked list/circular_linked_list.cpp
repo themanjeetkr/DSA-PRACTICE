@@ -3,6 +3,8 @@ using namespace std;
 
 class node {
 public:
+
+// data and address of next 
     int data;
     node *next;
     

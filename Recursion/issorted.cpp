@@ -7,6 +7,7 @@ bool issorted(int arr[] ,int size ){
     if(arr[0]>arr[1])
     return false;
     else{
+        // check the sorted or not 
         bool remainingpart=issorted(arr+1,size-1);
         return remainingpart;
 

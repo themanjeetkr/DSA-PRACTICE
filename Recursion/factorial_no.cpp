@@ -6,6 +6,7 @@ int factorial(int n){
 
     int smallerproblem=factorial(n-1);
     int biggerproblem=n*smallerproblem;
+    // return the factorial 
     return biggerproblem;   
 }
 

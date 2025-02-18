@@ -5,6 +5,7 @@ int fibonnaci(int num){
    return 1;
    if(num==0)
    return 0;
+//  return the fibonnaic series
    return fibonnaci(num-1)+fibonnaci(num-2);
     
 }

@@ -4,6 +4,7 @@ using namespace std;
 bool issorted(int arr[] ,int size ){
     if(size==0||size==1)
     return true;
+    // check the arr[0] and arr[1]
     if(arr[0]>arr[1])
     return false;
     else{

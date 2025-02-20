@@ -5,6 +5,7 @@ class node {
 public:
     int data;
     node* next;
+    // insert the value 
 
     node(int value) {
         this->data = value;

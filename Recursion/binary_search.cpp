@@ -14,6 +14,7 @@ bool binarysearch(int *arr, int s, int e, int k) {
        bool right = binarysearch(arr, mid + 1, e, k);
         return right;
     } else {
+        // left binary search 
         bool left = binarysearch(arr, s, mid - 1, k);          //return binarysearch(arr, s, mid - 1, k);
         return left; 
     }

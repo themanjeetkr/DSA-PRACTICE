@@ -6,6 +6,8 @@ bool sorted(int arr[],int n){
         {
             if (arr[i-1]>arr[i])
             {
+              // count increase
+
               count++;
             }
             

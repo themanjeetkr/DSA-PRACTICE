@@ -23,7 +23,7 @@ int main() {
     int arr[] = {2, 3, 4, 5, 5};
     int size = 5;
     int key = 2;
-
+    //binary search
     if (binarysearch(arr, 0, size - 1, key))
         cout << "Key found" << endl;
     else

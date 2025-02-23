@@ -44,7 +44,7 @@ int main() {
     insertAttail(tail, 40);
 
     // Print the linked list
-    print(head);
+    print(head);//call head
 
     return 0;
 }

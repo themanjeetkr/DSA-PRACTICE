@@ -17,6 +17,7 @@ class mystack{
             arr[top]=element;
         }
         else{
+            /
             cout<<"stack overflow"<<endl;
         }
 

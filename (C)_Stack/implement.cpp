@@ -3,6 +3,7 @@
 using namespace std;
 class mystack{
     public:
+    // for dynamically allocate use *arr
     int *arr;
     int top;
     int size;
@@ -12,12 +13,13 @@ class mystack{
         top=-1;
     }
     void push(int element){
+        // check the size of stack
         if(size-top>1){
             top++;
             arr[top]=element;
         }
         else{
-            /
+            
             cout<<"stack overflow"<<endl;
         }
 

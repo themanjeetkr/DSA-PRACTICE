@@ -47,6 +47,7 @@ void insertNode(node *&tail, int element, int d) {
 // Function to print the circular linked list
 void print(node *tail) {
     if (tail == NULL) {
+        
         cout << "List is empty." << endl;
         return;
     }

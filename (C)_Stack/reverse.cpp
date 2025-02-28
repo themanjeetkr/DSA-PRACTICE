@@ -9,7 +9,8 @@ int main(){
     char ch=str[i];
     s.push(ch);
     }
-    string ans=" ";
+    // empty string
+    string ans=" "; 
     while (!s.empty())
     {
         /* code */

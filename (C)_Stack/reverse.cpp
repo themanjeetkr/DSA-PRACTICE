@@ -15,6 +15,7 @@ int main(){
         /* code */
         char ch=s.top();
         ans.push_back(ch);
+        //  remove top element
         s.pop();
     }
     cout<<"the answer is "<<ans<<endl;

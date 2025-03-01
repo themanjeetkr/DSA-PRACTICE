@@ -6,6 +6,7 @@ int getlength(char name[]){
     {
     count++;   // increase the no of element one by one 
     }
+    // it return the count
     return count;
     
 }

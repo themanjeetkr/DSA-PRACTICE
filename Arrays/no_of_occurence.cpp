@@ -22,6 +22,7 @@ int firstocc(int arr[], int n, int key)
         }
         else
         {
+            //supdate the start value 
             start = mid + 1;
         }
         mid = start + (end - start) / 2;

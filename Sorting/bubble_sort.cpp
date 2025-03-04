@@ -15,6 +15,7 @@ void bubble_sort(int arr[],int n){
     }
 for (int i = 0; i < n; i++)
 {
+    // print the array 
     cout<<arr[i];
 }
 

@@ -9,6 +9,7 @@ class mystack{
     int size;
     mystack(int size){
         // add size of array
+        
         this->size=size;
         arr=new int[size];
         top=-1;

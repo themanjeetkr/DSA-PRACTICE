@@ -2,6 +2,7 @@
 using namespace std;
 void bubble_sort(int arr[],int n){
     for (int i = 1; i < n-1; i++)// starting from index 1
+    
     {
        for (int j = 0; j < n-i; j++) // compare with index 0
        {

@@ -11,6 +11,7 @@ int main(){
     q.pop();
     cout<<"sze of queue is :"<<q.size()<<endl;
     if(q.empty()){
+        // queue is empty
         cout<<"queue is empty"<<endl;
     }
     else{

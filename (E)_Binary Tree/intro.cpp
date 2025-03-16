@@ -26,17 +26,17 @@ node* buildtree(node* root) {
 
     root = new node(data);
 
-    cout << "Enter data for inserting in left" << endl;
+    cout << "Enter data for inserting in left" << data<<endl;
     root->left = buildtree(root->left);
 
-    cout << "Enter data for inserting in right" << endl;
+    cout << "Enter data for inserting in right" <<data<<endl;
     root->right = buildtree(root->right);
 
     return root;
 }
 
 void levelorder(node* root) {
-    if (root == NULL) {  // Null check added
+    if (root == NULL) {
         cout << "Tree is empty!" << endl;
         return;
     }
@@ -46,7 +46,7 @@ void levelorder(node* root) {
 
     while (!q.empty()) {
         node* temp = q.front();
-        cout << temp->data << " ";  // Better inline output
+        cout << temp->data << " ";
         q.pop();
 
         if (temp->left) {
@@ -59,11 +59,37 @@ void levelorder(node* root) {
     cout << endl;
 }
 
+// Correct placement of preorder function
+void preorder(node* root) {
+    if (root == NULL) {
+        return;
+    }
+    cout << root->data << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
+void postorder(node *root){
+    if(root==NULL){
+        return;
+    }
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data;
+}
+node* buildfromlevelorder(node* root){
+
+}
+
 int main() {
     node* root = NULL;
     root = buildtree(root);
     cout << "Level Order Traversal: ";
     levelorder(root);
+
+    cout << "Preorder Traversal: "<<endl;
+    preorder(root);
+    cout<<"postorder Traversal"<<endl;
+    postorder(root);
 
     return 0;
 }

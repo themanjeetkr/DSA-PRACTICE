@@ -1,4 +1,5 @@
 #include <iostream>
+#include<queue>
 using namespace std;
 
 class heap {
@@ -116,5 +117,20 @@ for (int i = 1; i <=n; i++)
 
 }cout<<endl;
 
-    return 0;
+
+// to build the  max and min heap easily we use priority queue
+ priority_queue<int> pq;
+    pq.push(3);
+    pq.push(4);
+    pq.push(5);
+    
+    cout << "element at the top: " << pq.top() << endl; // fixed: added colon and << operator
+    if(pq.empty()){
+        cout<<"pq is empty"<<endl;
+    }
+    else{
+        cout<<"pq is not empty"<<endl;
+    }
+
+    return 0; // fixed: added semicolon;
 }

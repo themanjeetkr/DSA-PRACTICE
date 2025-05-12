@@ -20,7 +20,8 @@ public:
             if (arr[parent] < arr[index]) {
                 swap(arr[parent], arr[index]);
                 index = parent;
-            } else {
+            } 
+            else {
                 return;
             }
         }
@@ -75,6 +76,15 @@ void heapify(int arr[], int n, int i) {
         heapify(arr, n, largest);
     }
 }
+void heapsort(int arr[],int n){
+    int size=n;
+    while(size>1){
+        swap(arr[size],arr[1]);
+        size--;
+        heapify(arr,size,1);
+
+    }
+}
 
 int main() {
     heap h;
@@ -97,6 +107,14 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
+heapsort(arr,n);
+cout<<"printing sorted array"<<endl;
+for (int i = 1; i <=n; i++)
+{
+    /* code */
+    cout<<arr[i]<<" ";
+
+}cout<<endl;
 
     return 0;
 }

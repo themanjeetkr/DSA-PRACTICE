@@ -27,5 +27,7 @@ int main() {
 
 cout << maxEvenLengthOR(arr) << endl; //print the maxlength
 
+// print the logic
+
     return 0;
 }

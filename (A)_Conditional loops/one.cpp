@@ -25,7 +25,7 @@ int main() {
   cin >> arr[i];
     }
 
-cout << maxEvenLengthOR(arr) << endl;
+cout << maxEvenLengthOR(arr) << endl; //print the maxlength
 
     return 0;
 }
